@@ -10,7 +10,7 @@ class DucksController < ApplicationController
 
   # GET /ducks/1
   def show
-    render json: @duck
+    render json: {duck: @duck, comments: @duck.comments}
   end
 
   # POST /ducks
