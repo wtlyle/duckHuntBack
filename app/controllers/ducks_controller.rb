@@ -46,6 +46,6 @@ class DucksController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def duck_params
-      params.require(:duck).permit(:name, :age, :enjoys, :fullImage)
+      params.require(:duck).permit(:name, :age, :enjoys, :fullImage, :quacks)
     end
 end
