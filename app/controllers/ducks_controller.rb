@@ -2,6 +2,10 @@ class DucksController < ApplicationController
   before_action :set_duck, only: [:show, :update, :destroy]
 
   # GET /ducks
+def home
+  render "home"
+end
+
   def index
     @ducks = Duck.all
 
